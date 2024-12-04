@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "OpenQueue.Application": {
+      "path": "src/OpenQueue.Application/OpenQueue.Application.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.Application.Tests": {
+      "path": "test/OpenQueue.Application.Tests/OpenQueue.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "OpenQueue.Domain.Shared": {
+      "path": "src/OpenQueue.Domain.Shared/OpenQueue.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.Application.Contracts": {
+      "path": "src/OpenQueue.Application.Contracts/OpenQueue.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.HttpApi": {
+      "path": "src/OpenQueue.HttpApi/OpenQueue.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.HttpApi.Client": {
+      "path": "src/OpenQueue.HttpApi.Client/OpenQueue.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.EntityFrameworkCore.Tests": {
+      "path": "test/OpenQueue.EntityFrameworkCore.Tests/OpenQueue.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "OpenQueue.EntityFrameworkCore": {
+      "path": "src/OpenQueue.EntityFrameworkCore/OpenQueue.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.TestBase": {
+      "path": "test/OpenQueue.TestBase/OpenQueue.TestBase.abppkg",
+      "folder": "test"
+    },
+    "OpenQueue.Domain.Tests": {
+      "path": "test/OpenQueue.Domain.Tests/OpenQueue.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "OpenQueue.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/OpenQueue.HttpApi.Client.ConsoleTestApp/OpenQueue.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "OpenQueue.DbMigrator": {
+      "path": "src/OpenQueue.DbMigrator/OpenQueue.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.HttpApi.Host": {
+      "path": "src/OpenQueue.HttpApi.Host/OpenQueue.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "OpenQueue.Domain": {
+      "path": "src/OpenQueue.Domain/OpenQueue.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
