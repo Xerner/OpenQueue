@@ -16,6 +16,9 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using OpenQueue.Models.Books;
 using OpenQueue.Models.Queues;
+using System.Reflection.Emit;
+using System.Reflection.Metadata;
+using OpenQueue.Configurations;
 
 namespace OpenQueue.EntityFrameworkCore;
 
@@ -101,21 +104,7 @@ public class OpenQueueDbContext :
         //    //...
         //});
 
-        builder.Entity<Queue>(b =>
-        {
-            b.ToTable(OpenQueueConsts.DbTablePrefix + "Queues",
-                OpenQueueConsts.DbSchema);
-            b.ConfigureByConvention(); //auto configure for the base class props
-            b.Property(x => x.Name).IsRequired().HasMaxLength(256);
-        });
-
-        builder.Entity<QueueItem>(b =>
-        {
-            b.ToTable(OpenQueueConsts.DbTablePrefix + "QueueItems",
-                OpenQueueConsts.DbSchema);
-            b.ConfigureByConvention(); //auto configure for the base class props
-            b.Property(x => x.Name).IsRequired().HasMaxLength(256);
-            b.Property(x => x.Sender).IsRequired();
-        });
+        new QueueEntityTypeConfiguration().Configure(builder.Entity<Queue>());
+        new QueueItemEntityTypeConfiguration().Configure(builder.Entity<QueueItem>());
     }
 }
