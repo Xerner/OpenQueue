@@ -4,7 +4,15 @@ export const APP_ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES),
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES)
+  },
+  {
+    path: 'books',
+    loadChildren: () => import('./book/book.routes').then(routes => routes.BOOK_ROUTES)
   },
   {
     path: 'account',
@@ -23,13 +31,5 @@ export const APP_ROUTES: Routes = [
     path: 'setting-management',
     loadChildren: () =>
       import('@abp/ng.setting-management').then(m => m.SettingManagementModule.forLazy()),
-  },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES)
-  },
-  {
-    path: 'books',
-    loadChildren: () => import('./book/book.routes').then(routes => routes.BOOK_ROUTES)
   },
 ];

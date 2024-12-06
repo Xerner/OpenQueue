@@ -1,5 +1,5 @@
 import { PageModule } from '@abp/ng.components/page';
-import { AuthService } from '@abp/ng.core';
+import { AuthService, CoreModule } from '@abp/ng.core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss'],
   imports: [
     // PageModule,
+    CoreModule,
   ]
 })
 export class HomeComponent {

@@ -2,8 +2,9 @@ import { CoreModule, ListService, PagedResultDto } from '@abp/ng.core';
 import { Component, OnInit } from '@angular/core';
 import { BookService, BookDto, bookTypeOptions } from '@proxy/books';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { NgbDateNativeAdapter, NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDateNativeAdapter, NgbDateAdapter, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmationService, Confirmation, ThemeSharedModule } from '@abp/ng.theme.shared';
+import { ExtensibleModule } from '@abp/ng.components/extensible';
 
 @Component({
   selector: 'app-book',
@@ -11,6 +12,7 @@ import { ConfirmationService, Confirmation, ThemeSharedModule } from '@abp/ng.th
   imports: [
     CoreModule,
     ThemeSharedModule,
+    NgbDatepickerModule,
   ],
   providers: [
     ListService,
