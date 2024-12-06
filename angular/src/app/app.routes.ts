@@ -1,12 +1,10 @@
-import { authGuard, permissionGuard } from '@abp/ng.core';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
-const routes: Routes = [
+export const APP_ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./home/home.component').then(m => m.HomeComponent),
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
   },
   {
     path: 'account',
@@ -26,11 +24,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('@abp/ng.setting-management').then(m => m.SettingManagementModule.forLazy()),
   },
-  { path: 'books', loadChildren: () => import('./book/book.module').then(m => m.BookModule) },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES)
+  },
+  {
+    path: 'books',
+    loadChildren: () => import('./book/book.routes').then(routes => routes.BOOK_ROUTES)
+  },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
