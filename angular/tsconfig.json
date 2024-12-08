@@ -22,7 +22,8 @@
       ],
       "@proxy/*": [
         "src/app/proxy/*"
-      ]
+      ],
+      "@abp/ng.account": ["src/abp/npm/ng-packs/packages/account/src/public-api.ts"],
     },
     "useDefineForClassFields": false
   },

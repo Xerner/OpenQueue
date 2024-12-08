@@ -7,10 +7,6 @@ export const APP_ROUTES: Routes = [
     loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES),
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.routes').then(routes => routes.HOME_ROUTES)
-  },
-  {
     path: 'books',
     loadChildren: () => import('./book/book.routes').then(routes => routes.BOOK_ROUTES)
   },

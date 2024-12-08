@@ -1,0 +1,4 @@
+[submodule "angular/src/abp"]
+	path = angular/src/abp
+	url = https://github.com/abpframework/abp.git
+	branch = rel-9.0

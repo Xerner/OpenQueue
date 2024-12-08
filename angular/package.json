@@ -12,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@abp/ng.account": "~9.0.0",
+    // "@abp/ng.account": "~9.0.0",
     "@abp/ng.components": "~9.0.0",
     "@abp/ng.core": "~9.0.0",
     "@abp/ng.identity": "~9.0.0",
