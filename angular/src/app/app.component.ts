@@ -1,5 +1,5 @@
 import { CoreModule } from '@abp/ng.core';
-import { LoaderBarComponent, provideAbpThemeShared, ThemeSharedModule } from '@abp/ng.theme.shared';
+import { LoaderBarComponent, ThemeSharedModule } from '@abp/ng.theme.shared';
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
   imports: [
     ThemeSharedModule,
     CoreModule,
-  ]
+  ],
+  standalone: true,
 })
 export class AppComponent {}

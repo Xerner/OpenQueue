@@ -1,7 +1,6 @@
 import { PageModule } from '@abp/ng.components/page';
 import { AuthService, CoreModule } from '@abp/ng.core';
 import { Component } from '@angular/core';
-import { AccountModule } from '@abp/ng.account';
 
 @Component({
   selector: 'app-home',

@@ -1,0 +1,13 @@
+{
+	"folders": [
+    {
+      "name": "OpenQueue.Client",
+      "path": "."
+    },
+    {
+      "name": "Abp.io",
+      "path": "src/abp/npm"
+    }
+  ],
+  "settings": {}
+}
