@@ -15,6 +15,8 @@
     "@abp/ng.core": "~9.0.1",
     "@abp/ng.theme.shared": "~9.0.1",
     "@abp/ng.account.core": "~9.0.1",
+    "angular-oauth2-oidc": "^17.0.0",
+    "@abp/ng.components": "~9.0.1",
 
     "@abp/ng.theme.lepton-x": "~4.0.0",
     "@angular/animations": "~18.2.0",
